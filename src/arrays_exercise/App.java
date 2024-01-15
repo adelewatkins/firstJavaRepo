@@ -12,10 +12,10 @@ public class App {
 
 		// Create a for loop that populates an integer array with values,
 		// outputting them at each iteration.
-		
-		//Then create another loop that iterates through the array, 
-		//changing the values at each point to equal itself times 10, 
-		//outputting them at each iteration.
+
+		// Then create another loop that iterates through the array,
+		// changing the values at each point to equal itself times 10,
+		// outputting them at each iteration.
 
 		int[] numbers = new int[10];
 
@@ -23,13 +23,10 @@ public class App {
 			numbers[i] = i + 1;
 			System.out.println("I: " + i + " NUMBER: " + numbers[i]);
 			numbers[i] = numbers[i] * 10;
+			// shortcut for line above would be 'numbers[i] *= 10'
 			System.out.println("I: " + i + " previous NUMBER times 10: " + numbers[i]);
 		}
-		
-		
-		
-		
-		
+
 	}
 
 }
