@@ -19,9 +19,16 @@ public class App {
 		friend3.age = 25;
 		friend3.job = "Pharmacy";
 
+		// print the friends
 		friend.intro();
 		friend2.intro();
 		friend3.intro();
+
+		// can also print using an array
+		Person[] friends = { friend, friend2, friend3 };
+		for (Person people : friends) {
+			people.intro();
+		}
 
 	}
 
