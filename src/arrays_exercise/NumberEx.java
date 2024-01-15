@@ -3,12 +3,12 @@ package arrays_exercise;
 public class NumberEx {
 
 	public static void main(String[] args) {
-//		for (int i = 1; i <= 20; i++) {
-//			System.out.println(fizzBuzz(i));
-//		}
-//		for (int i = 10; i <= 99; i++) {
-//			System.out.println("I: " + i + " SUM: " + sumDigits(i));
-//		}
+		for (int i = 1; i <= 20; i++) {
+			System.out.println(fizzBuzz(i));
+		}
+		for (int i = 10; i <= 99; i++) {
+			System.out.println("I: " + i + " SUM: " + sumDigits(i));
+		}
 		for (int i = 1; i < 100; i++) {
 			System.out.println("I: " + i + " Text: " + numToString(i));
 		}
