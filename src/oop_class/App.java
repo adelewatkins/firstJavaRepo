@@ -5,19 +5,19 @@ public class App {
 	public static void main(String[] args) {
 
 		Person friend = new Person();
-		friend.name = "Adele";
-		friend.age = 28;
-		friend.job = "LBG";
+		friend.setName("Adele");
+		friend.setAge(28);
+		friend.setJob("LBG");
 
 		Person friend2 = new Person();
-		friend2.name = "Luke";
-		friend2.age = 34;
-		friend2.job = "Carpenter";
+		friend2.setName("Luke");
+		friend2.setAge(34);
+		friend2.setJob("Carpenter");
 
 		Person friend3 = new Person();
-		friend3.name = "Georgia";
-		friend3.age = 25;
-		friend3.job = "Pharmacy";
+		friend3.setName("Georgia");
+		friend3.setAge(25);
+		friend3.setJob("Pharmacy");
 
 		// print the friends
 		friend.intro();
@@ -29,6 +29,13 @@ public class App {
 		for (Person people : friends) {
 			people.intro();
 		}
+
+		// setting friend2 a new age by getting their current
+		// one, adding one, setting it, then doing the intro
+		// method to see the updated age
+
+		friend2.setAge(friend2.getAge() + 1);
+		friend2.intro();
 
 	}
 
