@@ -5,14 +5,11 @@ public class Plane extends Vehicle {
 	private boolean propeller;
 
 	public Plane() {
-
+		super();
 	}
 
 	public Plane(String type, String make, String colour, int topSpeed, boolean propeller) {
-		setType(type);
-		setMake(make);
-		setColour(colour);
-		setTopSpeed(topSpeed);
+		super(type, make, colour, topSpeed);
 		this.propeller = propeller;
 	}
 
@@ -22,6 +19,11 @@ public class Plane extends Vehicle {
 
 	public void setPropeller(boolean propeller) {
 		this.propeller = propeller;
+	}
+
+	public void planeInfo() {
+		System.out.println("Has propeller: " + this.propeller);
+		System.out.println("---");
 	}
 
 }

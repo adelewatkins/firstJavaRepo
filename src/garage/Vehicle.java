@@ -12,6 +12,7 @@ public class Vehicle {
 
 	public Vehicle() {
 		// default (blank) constructor
+		super();
 	}
 
 	public Vehicle(String type, String make, String colour, int topSpeed) {

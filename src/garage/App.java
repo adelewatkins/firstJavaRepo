@@ -24,10 +24,26 @@ public class App {
 		bike2.setSidecar(true);
 
 		bike1.print();
+		bike1.bikeInfo();
 		bike2.print();
+		bike2.bikeInfo();
 
 		Plane plane2 = new Plane("Plane", "Boeing", "Blue", 500, false);
+		Plane plane3 = new Plane();
+		plane3.setType("Plane");
+		plane3.setMake("Glider");
+		plane3.setColour("Pink");
+		plane3.setTopSpeed(45);
+		plane3.setPropeller(true);
+
 		plane2.print();
+		plane2.planeInfo();
+		plane3.print();
+		plane3.planeInfo();
+
+		Car car2 = new Car("Car", "Audi", "Grey", 155, true);
+		car2.print();
+		car2.carInfo();
 	}
 
 }
