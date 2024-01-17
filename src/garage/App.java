@@ -4,16 +4,16 @@ public class App {
 
 	public static void main(String[] args) {
 
-		Vehicle car1 = new Vehicle();
-		car1.setType("Car");
-		car1.setMake("VW");
-		car1.setColour("White");
-		car1.setTopSpeed(150);
-
-		Vehicle plane1 = new Vehicle("Plane", "Boeing", "Orange", 500);
-
-		car1.print();
-		plane1.print();
+//		Vehicle car1 = new Vehicle();
+//		car1.setType("Car");
+//		car1.setMake("VW");
+//		car1.setColour("White");
+//		car1.setTopSpeed(150);
+//
+//		Vehicle plane1 = new Vehicle("Plane", "Boeing", "Orange", 500);
+//
+//		car1.print();
+//		plane1.print();
 
 		Bike bike1 = new Bike("Bike", "Yamaha", "Red", 160, false);
 		Bike bike2 = new Bike();
@@ -24,9 +24,7 @@ public class App {
 		bike2.setSidecar(true);
 
 		bike1.print();
-		bike1.bikeInfo();
 		bike2.print();
-		bike2.bikeInfo();
 
 		Plane plane2 = new Plane("Plane", "Boeing", "Blue", 500, false);
 		Plane plane3 = new Plane();
@@ -37,13 +35,19 @@ public class App {
 		plane3.setPropeller(true);
 
 		plane2.print();
-		plane2.planeInfo();
 		plane3.print();
-		plane3.planeInfo();
 
 		Car car2 = new Car("Car", "Audi", "Grey", 155, true);
 		car2.print();
-		car2.carInfo();
+
+		// can put them in an array
+		Vehicle[] vehicles = { car2, plane2, bike2 };
+		// then use the array to print all of them only needing
+		// to call it once
+		for (Vehicle vehicle : vehicles) {
+			vehicle.print();
+		}
+
 	}
 
 }

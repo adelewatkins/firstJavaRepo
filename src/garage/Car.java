@@ -22,7 +22,9 @@ public class Car extends Vehicle {
 		this.sunroof = sunroof;
 	}
 
-	public void carInfo() {
+	@Override
+	public void print() {
+		super.print();
 		System.out.println("Has Sunroof: " + this.sunroof);
 		System.out.println("---");
 	}

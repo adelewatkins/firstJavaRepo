@@ -21,7 +21,9 @@ public class Plane extends Vehicle {
 		this.propeller = propeller;
 	}
 
-	public void planeInfo() {
+	@Override
+	public void print() {
+		super.print();
 		System.out.println("Has propeller: " + this.propeller);
 		System.out.println("---");
 	}

@@ -21,7 +21,9 @@ public class Bike extends Vehicle {
 		this.sidecar = sidecar;
 	}
 
-	public void bikeInfo() {
+	@Override
+	public void print() {
+		super.print();
 		System.out.println("Has Sidecar: " + this.sidecar);
 		System.out.println("---");
 	}

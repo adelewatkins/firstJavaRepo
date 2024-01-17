@@ -27,7 +27,6 @@ public class Vehicle {
 		System.out.println("Make: " + this.make);
 		System.out.println("Colour: " + this.colour);
 		System.out.println("Top Speed: " + this.topSpeed + "mph");
-		System.out.println("---");
 	}
 
 	public String getType() {
