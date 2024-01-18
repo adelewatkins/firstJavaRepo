@@ -13,6 +13,11 @@ public class Plane extends Vehicle {
 		this.propeller = propeller;
 	}
 
+	@Override
+	public int calcBill() {
+		return 10;
+	}
+
 	public boolean hasPropeller() {
 		return propeller;
 	}

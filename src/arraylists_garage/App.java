@@ -49,17 +49,24 @@ public class App {
 //		myGarage.print();
 
 		// objects
-		Bike bike1 = new Bike("Bike", "Yamaha", "Red", 160, false);
-		Bike bike2 = new Bike("Bike", "Yamaha", "Red", 160, false);
-		Plane plane10 = new Plane("Plane", "Boeing", "Blue + Yellow", 550, false);
-		Plane plane20 = new Plane("Plane", "Air Bus", "White + Red", 500, false);
-
-		System.out.println("bike1.equals(bike2): " + bike1.equals(bike2));
-		System.out.println("plane10.equals(plane20): " + plane10.equals(plane20));
-		System.out.println("bike1.equals(plane20): " + bike1.equals(plane20));
+//		Bike bike1 = new Bike("Bike", "Yamaha", "Red", 160, false);
+//		Bike bike2 = new Bike("Bike", "Yamaha", "Red", 160, false);
+//		Plane plane10 = new Plane("Plane", "Boeing", "Blue + Yellow", 550, false);
+//		Plane plane20 = new Plane("Plane", "Air Bus", "White + Red", 500, false);
+//
+//		System.out.println("bike1.equals(bike2): " + bike1.equals(bike2));
+//		System.out.println("plane10.equals(plane20): " + plane10.equals(plane20));
+//		System.out.println("bike1.equals(plane20): " + bike1.equals(plane20));
 
 		System.out.println(bigGarage);
 		System.out.println(bikeGarage);
 		System.out.println(myGarage);
+
+		// System.out.println(plane20.calcBill());
+
+		bigGarage.fix();
+		bikeGarage.fix();
+		myGarage.fix();
+
 	}
 }

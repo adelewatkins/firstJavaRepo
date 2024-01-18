@@ -13,6 +13,11 @@ public class Bike extends Vehicle {
 		this.sidecar = sidecar;
 	}
 
+	@Override
+	public int calcBill() {
+		return 2;
+	}
+
 	public boolean hasSidecar() {
 		return sidecar;
 	}

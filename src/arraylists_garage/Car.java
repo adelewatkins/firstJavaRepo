@@ -14,6 +14,11 @@ public class Car extends Vehicle {
 		this.sunroof = sunroof;
 	}
 
+	@Override
+	public int calcBill() {
+		return 5;
+	}
+
 	public boolean hasSunroof() {
 		return sunroof;
 	}

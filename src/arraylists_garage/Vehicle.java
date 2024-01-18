@@ -2,7 +2,7 @@ package arraylists_garage;
 
 import java.util.Objects;
 
-public class Vehicle {
+public abstract class Vehicle {
 
 	private String type;
 
@@ -23,6 +23,8 @@ public class Vehicle {
 		this.colour = colour;
 		this.topSpeed = topSpeed;
 	}
+
+	public abstract int calcBill();
 
 	@Override
 	public boolean equals(Object obj) {
