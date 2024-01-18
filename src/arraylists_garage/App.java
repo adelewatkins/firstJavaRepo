@@ -33,17 +33,33 @@ public class App {
 		myGarage.park(new Car("Car", "VW", "White", 120, false));
 		myGarage.park(new Car("Car", "Audi", "Black", 130, false));
 
-		bigGarage.print();
-		bikeGarage.print();
-		myGarage.print();
+//		bigGarage.print();
+//		bikeGarage.print();
+//		myGarage.print();
 
-		myGarage.collect(1);
+//		myGarage.collect(1);
 		bigGarage.collect(0);
-		bikeGarage.collect(1);
+//		bikeGarage.collect(1);
 
-		bigGarage.print();
-		bikeGarage.print();
-		myGarage.print();
+//		myGarage.collect(new Car("Car", "VW", "White", 120, false));
+//		bikeGarage.collect(new Bike("Bike", "Honda", "Red", 140, false));
 
+//		bigGarage.print();
+//		bikeGarage.print();
+//		myGarage.print();
+
+		// objects
+		Bike bike1 = new Bike("Bike", "Yamaha", "Red", 160, false);
+		Bike bike2 = new Bike("Bike", "Yamaha", "Red", 160, false);
+		Plane plane10 = new Plane("Plane", "Boeing", "Blue + Yellow", 550, false);
+		Plane plane20 = new Plane("Plane", "Air Bus", "White + Red", 500, false);
+
+		System.out.println("bike1.equals(bike2): " + bike1.equals(bike2));
+		System.out.println("plane10.equals(plane20): " + plane10.equals(plane20));
+		System.out.println("bike1.equals(plane20): " + bike1.equals(plane20));
+
+		System.out.println(bigGarage);
+		System.out.println(bikeGarage);
+		System.out.println(myGarage);
 	}
 }

@@ -1,5 +1,7 @@
 package arraylists_garage;
 
+import java.util.Objects;
+
 public class Vehicle {
 
 	private String type;
@@ -22,12 +24,34 @@ public class Vehicle {
 		this.topSpeed = topSpeed;
 	}
 
-	public void print() {
-		System.out.println("Vehicle Type: " + this.type);
-		System.out.println("Make: " + this.make);
-		System.out.println("Colour: " + this.colour);
-		System.out.println("Top Speed: " + this.topSpeed + "mph");
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj) {
+			return true;
+		}
+		if (obj == null) {
+			return false;
+		}
+		if (getClass() != obj.getClass()) {
+			return false;
+		}
+
+		Vehicle other = (Vehicle) obj;
+		return type == other.type && Objects.equals(make, other.make) && Objects.equals(colour, other.colour)
+				&& Objects.equals(topSpeed, other.topSpeed);
 	}
+
+	@Override
+	public String toString() {
+		return "Vehicle [type=" + type + ", make=" + make + ", colour=" + colour + ", topSpeed=" + topSpeed + "]";
+	}
+
+//	public void print() {
+//		System.out.println("Vehicle Type: " + this.type);
+//		System.out.println("Make: " + this.make);
+//		System.out.println("Colour: " + this.colour);
+//		System.out.println("Top Speed: " + this.topSpeed + "mph");
+//	}
 
 	public String getType() {
 		return type;

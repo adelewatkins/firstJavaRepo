@@ -22,11 +22,39 @@ public class Car extends Vehicle {
 		this.sunroof = sunroof;
 	}
 
+//	@Override
+//	public void print() {
+//		super.print();
+//		System.out.println("Has Sunroof: " + this.sunroof);
+//		System.out.println("---");
+//	}
+
 	@Override
-	public void print() {
-		super.print();
-		System.out.println("Has Sunroof: " + this.sunroof);
-		System.out.println("---");
+	public boolean equals(Object obj) {
+		if (this == obj) {
+			return true;
+		}
+		if (obj == null) {
+			return false;
+		}
+		if (getClass() != obj.getClass()) {
+			return false;
+		}
+		Car other = (Car) obj;
+
+		if (!super.equals(obj)) {
+			return false;
+		}
+		if (this.sunroof != other.hasSunroof()) {
+			return false;
+		}
+		return true;
+	}
+
+	@Override
+	public String toString() {
+		return "Car [getType()=" + getType() + ", getMake()=" + getMake() + ", getColour()=" + getColour()
+				+ ", getTopSpeed()=" + getTopSpeed() + " sunroof=" + sunroof + " ]";
 	}
 
 }

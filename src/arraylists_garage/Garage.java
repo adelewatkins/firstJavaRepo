@@ -28,12 +28,21 @@ public class Garage {
 		vehicles.remove(i);
 	}
 
-	public void print() {
-		for (Vehicle vehicle : vehicles) {
-			System.out.println("Stored at " + name);
-			vehicle.print();
-
-		}
+	public void collect(Vehicle vehicle) {
+		vehicles.remove(vehicle);
 	}
+
+	@Override
+	public String toString() {
+		return "Garage [name=" + name + ", vehicles=" + vehicles + "]";
+	}
+
+//	public void print() {
+//		for (Vehicle vehicle : vehicles) {
+//			System.out.println("Stored at " + name);
+//			vehicle.print();
+//
+//		}
+//	}
 
 }

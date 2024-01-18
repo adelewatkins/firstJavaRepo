@@ -21,11 +21,39 @@ public class Plane extends Vehicle {
 		this.propeller = propeller;
 	}
 
+//	@Override
+//	public void print() {
+//		super.print();
+//		System.out.println("Has propeller: " + this.propeller);
+//		System.out.println("---");
+//	}
+
 	@Override
-	public void print() {
-		super.print();
-		System.out.println("Has propeller: " + this.propeller);
-		System.out.println("---");
+	public boolean equals(Object obj) {
+		if (this == obj) {
+			return true;
+		}
+		if (obj == null) {
+			return false;
+		}
+		if (getClass() != obj.getClass()) {
+			return false;
+		}
+		Plane other = (Plane) obj;
+
+		if (!super.equals(obj)) {
+			return false;
+		}
+		if (this.propeller != other.hasPropeller()) {
+			return false;
+		}
+		return true;
+	}
+
+	@Override
+	public String toString() {
+		return "Plane [getType()=" + getType() + ", getMake()=" + getMake() + ", getColour()=" + getColour()
+				+ ", getTopSpeed()=" + getTopSpeed() + " propeller=" + propeller + " ]";
 	}
 
 }
