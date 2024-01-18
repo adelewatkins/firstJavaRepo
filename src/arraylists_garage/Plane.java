@@ -15,7 +15,8 @@ public class Plane extends Vehicle {
 
 	@Override
 	public int calcBill() {
-		return 10;
+
+		return 10 * getTopSpeed();
 	}
 
 	public boolean hasPropeller() {

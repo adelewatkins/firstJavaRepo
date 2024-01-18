@@ -15,7 +15,7 @@ public class Bike extends Vehicle {
 
 	@Override
 	public int calcBill() {
-		return 2;
+		return 2 * getTopSpeed();
 	}
 
 	public boolean hasSidecar() {

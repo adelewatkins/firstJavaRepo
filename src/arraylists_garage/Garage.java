@@ -50,7 +50,7 @@ public class Garage {
 
 		for (Vehicle vehicle : vehicles) {
 			totalBill = totalBill + vehicle.calcBill();
-			System.out.println("Running total for " + name + " £" + totalBill);
+			// System.out.println("Running total for " + name + " £" + totalBill);
 		}
 		System.out.println("Total bill for " + name + " £" + totalBill);
 		return totalBill;

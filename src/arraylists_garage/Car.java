@@ -16,7 +16,7 @@ public class Car extends Vehicle {
 
 	@Override
 	public int calcBill() {
-		return 5;
+		return 5 * getTopSpeed();
 	}
 
 	public boolean hasSunroof() {
