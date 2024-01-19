@@ -2,7 +2,7 @@ package static_exercise;
 
 import java.util.Objects;
 
-public abstract class Vehicle {
+public abstract class Vehicle implements Comparable<Vehicle> {
 
 	private static int count;
 
@@ -82,6 +82,23 @@ public abstract class Vehicle {
 
 	public void setTopSpeed(int topSpeed) {
 		this.topSpeed = topSpeed;
+	}
+
+	// this orders based on ID
+//	@Override
+//	public int compareTo(Vehicle o) {
+//		if (id < o.getId()) {
+//			return -1;
+//		} else if (id > o.getId()) {
+//			return +1;
+//		} else {
+//			return 0;
+//		}
+
+	// this orders alphabetical on make
+	@Override
+	public int compareTo(Vehicle o) {
+		return this.make.compareTo(o.make);
 	}
 
 }
